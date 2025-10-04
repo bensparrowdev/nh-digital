@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --color-black: #000;
+  --color-white: #FFF;
+  --color-pink-1: #E3579E;
+  --color-pink-2: #E98399;
+  --color-pink-3: #F39F9D;
+  --color-orange-1: #E67042;
+  --color-orange-2: #E5885C;
+  --color-orange-3: #E8857F;
+  --font-roboto: 'Roboto', sans-serif;
+}
+
+body {
+  font-family: var(--font-roboto);
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  background: linear-gradient(45deg, 
+  var(--color-pink-1) 0%, 
+  var(--color-pink-2) 25%, 
+  var(--color-pink-3) 50%, 
+  var(--color-orange-3) 75%, 
+  var(--color-orange-1) 100%)
+}
+
+main {
+  padding: 25px;
+}
+
+h1 {
+  margin: 0 0 1rem;
+}
