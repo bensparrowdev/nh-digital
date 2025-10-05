@@ -6,8 +6,25 @@ import Head from "../components/Head.astro";
 	<Head />
 	<body>
 		<main>
-			<h1>NHdigital</h1>
-			<code>some text here.</code>
+			<header>
+				<h1 class="logo">NHDigital</h1>
+				<nav>
+					<a href="https://www.linkedin.com/in/nazhussain1998/" target="_blank">Linkedin</a>
+					<a href="https://www.behance.net/89fb4/" target="_blank">Behance</a>
+				</nav>
+			</header>
 		</main>
 	</body>
 </html>
+
+<script>
+	document.addEventListener('DOMContentLoaded', () => {
+		const logo = document.querySelector('.logo') as HTMLElement;
+		const nav = document.querySelector('nav') as HTMLElement;
+		if (logo && nav) {
+			logo.style.fontSize = '23vw';
+			logo.style.opacity = '1';
+			nav.style.opacity = '1';
+		} 
+	});
+</script>
