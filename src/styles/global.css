@@ -12,10 +12,19 @@
   --font-roboto: 'Roboto', sans-serif;
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 body {
   font-family: var(--font-roboto);
   color: var(--color-white);
-  min-height: 100dvh;
+  min-height: 100vh;
   margin: 0;
   padding: 0;
   font-size: 16px;
@@ -29,7 +38,7 @@ body {
 
 main {
   position: relative;
-  height: 100vh;
+  height: 100dvh;
 }
 
 h1 {
@@ -40,9 +49,9 @@ h1 {
 	position: absolute;
 	bottom: 0;
 	left: 0;
-	font-size: 0;
+	font-size: 23vw;
   opacity: 0;
-  transition: opacity 2s ease;
+  animation: fadeIn 2s ease forwards;
   user-select: none;
 }
 
@@ -58,7 +67,7 @@ nav {
   font-weight: 300;
   padding: 25px;
   opacity: 0;
-  transition: opacity 1s ease 2s;
+  animation: fadeIn 1s ease 2s forwards;
 }
 
 a {
